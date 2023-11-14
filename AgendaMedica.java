@@ -35,30 +35,7 @@ class AgendaMedica {
         System.out.println("Horário está livre.");
     }
 
-    public void verificarPaciente(String nome) {
-        for (MarcacaoHorario : horariosDisponiveis) {
-            if (MarcacaoHorario != null && MarcacaoHorario.Retornar_NomePac().equals(nome)) {
-                System.out.println("Consulta marcada para o paciente " + nome + " às " + MarcacaoHorario.Retornar_horario());
-                return;
-            }
-        }
-        System.out.println("Não há consulta marcada para o paciente " + nome);
-    }
-
-    public static void main(String[] args) {
-        AgendaMedica agenda = new AgendaMedica("14/11/2023");
-
-        // Exemplo de uso
-        agenda.agendar("14:30", "Maria");
-        agenda.agendar("15:00", "João");
-
-        agenda.verificarHorario("14:30");
-        agenda.verificarHorario("16:00");
-
-        agenda.verificarPaciente("Maria");
-        agenda.verificarPaciente("Pedro");
-    }
-}
+    
 
 
 
